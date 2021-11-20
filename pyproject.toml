@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cric-db"
+version = "0.1.0"
+description = "Cricket database and analysis"
+authors = ["Felix Clark <mfclark3690@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "3.10"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+build-from-cricsheet = "cric_db.cricsheet_db:build_from_cricsheet"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
