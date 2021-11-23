@@ -15,7 +15,7 @@ def build_from_cricsheet():
     cur = db_con.cursor()
 
     match_fields = [
-        'id INT',
+        'id INT PRIMARY KEY',
         'balls_per_over INT DEFAULT 6',
         'city TEXT',
         # Maybe just keep start/end dates?
